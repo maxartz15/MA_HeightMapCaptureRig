@@ -1,16 +1,15 @@
 {
-    "name": "COMPANYNAME.PACKAGENAME.Editor",
+    "name": "MA_Toolbox.MA_HeightMapCaptureRig",
     "references": [
-        "COMPANYNAME.PACKAGENAME"
+        "GUID:3897344bdb2681a4e923ab0fad487055"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }

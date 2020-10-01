@@ -1,0 +1,77 @@
+#pragma kernel HeightMap
+
+// Params.
+// offset.x, offset.y, resolution, recoveramount.
+float4 _Params;
+// Height, capture height.
+float4 _Params1;
+// Does the terrain camera caputure from top?
+bool _CaptureFromTop;
+
+// Input depth.
+Texture2D<float> _ObjectDepth;
+Texture2D<float> _TerrainDepth;
+
+// In, out.
+RWTexture2D<float> _ObjectDepthP;
+RWTexture2D<float4> _HeightMap;
+RWTexture2D<float4> _HeightMapRemap;
+
+[numthreads(32, 32, 1)]
+void HeightMap (uint3 id : SV_DispatchThreadID)
+{
+    // uv.
+    float2 uv = id.xy;
+
+    // Return if we are on the edge.
+    if(uv.x == 0 || uv.x == _Params.z - 1
+    || uv.y == 0 || uv.y == _Params.z - 1)
+    {
+        return;
+    }
+
+    // uv flipped y.
+    float2 flippedUv = uv;
+    flippedUv.y = _Params.z - uv.y;
+
+    // uv with offset.
+    float2 offsetUv;
+    offsetUv.x = clamp(uv.x - _Params.x, 0, _Params.z);
+    offsetUv.y = clamp(uv.y - _Params.y, 0, _Params.z);
+
+    
+    // Object depth.
+    float od = _ObjectDepthP[offsetUv].r;
+    // Recover over time.
+    od -= _Params.w;
+    // Add new depth objects.
+    od = max(od, _ObjectDepth[flippedUv].r);
+    // Clamp values to keep them in range.
+    od = clamp(od, 0, 1);
+
+
+    // Terrain depth.
+    float td;
+    if(_CaptureFromTop)
+    {
+        td = 1 - _TerrainDepth[uv].r;
+    }
+    else
+    {
+        td = 1 - _TerrainDepth[flippedUv].r;
+    }
+
+
+    // Height.
+    float h = td - od;
+
+
+    // Remap.
+    float hr = saturate(h / (_Params1.x / _Params1.y));
+
+
+    // Set values.
+    _ObjectDepthP[uv] = od;
+    _HeightMap[uv] = h;
+    _HeightMapRemap[uv] = hr;
+}

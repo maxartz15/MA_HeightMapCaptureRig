@@ -1,13 +1,15 @@
-# [COMPANYNAME]() - PACKAGENAME
+# MA_Toolbox - MA_HeightMapCaptureRig
 
-Description.
+A tool that calculates a height map texture with terrain - object intersection.
+
+- Realtime height map generation.
+  - Compute shading.
+- Terrain - object interaction.
+- (Snow) recovery.
 
 ## Install
 
 [Installing from a Git URL](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
-
-[Unitypackage](https://github.com/COMPANYNAME/PACKAGENAME/releases)
-
 
 ## LICENSE
 

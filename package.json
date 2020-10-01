@@ -1,10 +1,10 @@
 {
-  "name": "com.COMPANYNAME.PACKAGENAME",
-  "displayName": "Template Unity Package",
+  "name": "com.ma_toolbox.heightmapcapturerig",
+  "displayName": "MA_Toolbox - MA_HeightMapCaptureRig",
   "version": "0.1.0",
-  "unity": "2019.3",
-  "unityRelease": "7f1",
-  "description": "This is a template package, used as a basis to build a bigger one.",
+  "unity": "2019.4",
+  "unityRelease": "10f1",
+  "description": "Realtime height map generation with object intersection for snow and sand.",
   "category": "Tool",
   "type": "tool",
   "license": "MIT",
@@ -14,16 +14,20 @@
     "url": "https://www.maxartz15.com"
   },
   "dependencies": {
-    "com.maxartz15.package1": "0.1.0"
+    "com.ma_toolbox.ma_editor": "0.3.0",
+    "com.unity.render-pipelines.universal": "7.3.1"
   },
   "keywords": [
-    "COMPANYNAME",
-    "PACKAGENAME"
+    "MA_Toolbox",
+    "MA_HeightMapCaptureRig",
+    "Snow",
+    "Sand",
+    "HeightMap"
   ],
   "samples": [
     {
       "displayName": "Example 1",
-      "description": "This sample is just an example",
+      "description": "Basic example that shows the height map output.",
       "path": "Samples~/Example1"
     }
   ]

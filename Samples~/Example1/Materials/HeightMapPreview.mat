@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HeightMapPreview
+  m_Shader: {fileID: -6465566751694194690, guid: cfd94044a37b5c249a7b6e9666f3da3b,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _HeightMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ObjectDepth:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Parallax_4AE8BE75_Texture2DF0E51BC1_3046244569:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_68191D9B_Texture_1:
+        m_Texture: {fileID: 2800000, guid: d5321768b7f1ff1479e90cbabbecee6d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SceneDepth:
+        m_Texture: {fileID: 8400000, guid: c381856814233274b9190d66ba4745d7, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainDepth:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_0_Albedo:
+        m_Texture: {fileID: 2800000, guid: b2f53f3dc9c86ca459ba382c36c97605, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_0_Normal:
+        m_Texture: {fileID: 2800000, guid: 88b6fc61d1d6f874e831388ed6db9cee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_0_Smoothness:
+        m_Texture: {fileID: 2800000, guid: 7a0a82ef48da10f4b9d273025cd60cb0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_1_Albedo:
+        m_Texture: {fileID: 2800000, guid: c3a10d0b56bd8524e98721f52c975415, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_1_Normal:
+        m_Texture: {fileID: 2800000, guid: 55b69515a3bf7734d84644e9c6af3156, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_1_Smoothness:
+        m_Texture: {fileID: 2800000, guid: b1a12d80bd4515f488eb941a5948d687, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_9BE334FD: 0
+    - _Blend_Tex_0_Tex_1: 0
+    - _CaptureHeight: 64
+    - _CaptureSize: 64
+    - _CaptureTerrainFromTop: 1
+    - _Height: 0.25
+    - _Max: 150.13
+    - _Power_Tex_0_Tex_1: 0
+    - _Roughness: 0
+    - _Tile_0: 1
+    - _Tile_1: 1
+    - _TriBlend: 1
+    m_Colors:
+    - _MinMax: {r: 0, g: 10, b: 0, a: 0}
+    - _Offset: {r: -3.125, g: -3.125, b: 0, a: 0}

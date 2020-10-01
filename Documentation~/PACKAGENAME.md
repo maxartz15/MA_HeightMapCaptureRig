@@ -1,3 +1,3 @@
-# PACKAGENAME
+# MA_HeightMapCaptureRig
 
 Documentation.
