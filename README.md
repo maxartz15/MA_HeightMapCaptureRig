@@ -1,5 +1,7 @@
 # MA_Toolbox - MA_HeightMapCaptureRig
 
+![](Documentation~/Images/HeightMapCaptureRig_01.gif)
+
 A tool that calculates a height map texture with terrain - object intersection.
 
 - Realtime height map generation.
