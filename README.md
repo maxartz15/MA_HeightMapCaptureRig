@@ -5,7 +5,7 @@ A tool that calculates a height map texture with terrain - object intersection.
 - Realtime height map generation.
   - Compute shading.
 - Terrain - object interaction.
-- (Snow) recovery.
+- (Snow) height recovery.
 
 ## Install
 
