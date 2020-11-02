@@ -1,5 +1,11 @@
 # MA_Toolbox - MA_HeightMapCaptureRig
 
+**For learning purposes only.**
+
+- Using Graphics.Blit instead of compute might be better/faster?
+- One of the two extra cameras could be removed to increase performance?
+  - But the terrain itself would need a double sided material?
+
 ![](Documentation~/Images/HeightMapCaptureRig_01.gif)
 
 A tool that calculates a height map texture with terrain - object intersection.
